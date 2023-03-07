@@ -27,7 +27,7 @@ Phần backend của hệ thống được xây dựng để hỗ trợ các ứ
 - Monitoring: Prometheus, Grafana, Zipkin
 
 ### 2, Directory structure
-
+```
 ├ ——-**bookstore-backend**---------------------------- Thư mục cha, quản lý phụ thuộc
  │  │
  │ ├ —— common-------------------------------- Dữ liệu, class dùng chung
@@ -48,7 +48,7 @@ Phần backend của hệ thống được xây dựng để hỗ trợ các ứ
  │ ├ —— payment-service-------------------------- liên kết thanh toán
  │  │
  │ ├ —— search-service--------------------------- tìm kiếm sản phẩm ở catalog-services
-
+```
 ### 3, Kiến trúc ứng dụng
 
 ![package_diagram_4.1.2.drawio.png](Backend%202b25b07a7332475ebd51b9b8f78a5a4f/package_diagram_4.1.2.drawio.png)

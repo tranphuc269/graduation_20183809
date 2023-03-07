@@ -2,7 +2,7 @@
 
 Đồ án môn phỏng nghiệp vụ cơ bản của hệ thống bán hàng trên nền tảng Microservices.
 
-Repository này là bản sao, bản gốc sẽ được đính kèm ở mục [Repository gốc](https://github.com/tranphuc269/graduation_20183809)
+Repository này là bản sao tổng hợp để thầy dễ xem, bản gốc sẽ được đính kèm ở mục [Repository gốc](https://github.com/tranphuc269/graduation_20183809)
 
 ## Đây là tổng hợp kết quả của đồ án tốt nghiệp. Chia làm 3 phần
 

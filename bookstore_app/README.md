@@ -4,17 +4,15 @@
 <img src="screenshots/badges/Flutter-3.svg" height="28px" />&nbsp;&nbsp;
 <img src="screenshots/badges/dart-null_safety-blue.svg" height="28px"/>
 
-# GetX Clean Architecture
+# BookStore app
 
-A Flutter Clean Architecture Using [GetX](https://github.com/jonataslaw/getx).
-
-This repo is forked from: https://github.com/phamdinhduc795397/flutter-getx-clean-architecture
+Mô phỏng ứng dụng thương mại điện tử trên mobile.
 
 ## Work Flow
 
 ![alt text](screenshots/Clean-Architecture-Flutter-Diagram.png?raw=true)
 
-## Project Structure
+## Cấu trúc thư mục
 
 <img align="left" src="screenshots/folder_structure.png"></img>
 

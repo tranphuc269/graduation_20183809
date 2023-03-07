@@ -22,7 +22,7 @@ Phần backend của hệ thống được xây dựng để hỗ trợ các ứ
 - Persistence layer framework: Jpa
 - Database / storage: MySQL, Elasticsearch, Redis
 - Message queue: Kafka
-- Log management: Logback
+- Log management: Log4j
 - Deployment: Docker
 - Monitoring: Prometheus, Grafana, Zipkin
 

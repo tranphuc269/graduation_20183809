@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auth-service" />
+        <module name="payment-service" />
+        <module name="common" />
+        <module name="api-gateway-service" />
+        <module name="search-service" />
+        <module name="catalog-service" />
+        <module name="auth-service (2)" />
+        <module name="order-service" />
+        <module name="discovery-service" />
+        <module name="notification-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-gateway-service" target="11" />
+      <module name="auth-service" target="11" />
+      <module name="auth-service (1)" target="11" />
+      <module name="auth-service (2)" target="11" />
+      <module name="catalog-service" target="11" />
+      <module name="common" target="11" />
+      <module name="discovery-service" target="11" />
+      <module name="notification-service" target="11" />
+      <module name="order-service" target="11" />
+      <module name="payment-service" target="11" />
+      <module name="search-service" target="11" />
+      <module name="spring-boot-bookstore" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway-service" options="-parameters" />
+      <module name="auth-service" options="-parameters" />
+      <module name="auth-service (2)" options="-parameters" />
+      <module name="catalog-service" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="discovery-service" options="-parameters" />
+      <module name="notification-service" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+      <module name="payment-service" options="-parameters" />
+      <module name="search-service" options="-parameters" />
+    </option>
+  </component>
+</project>

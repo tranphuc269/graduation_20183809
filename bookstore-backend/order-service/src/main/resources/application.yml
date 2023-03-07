@@ -1,0 +1,80 @@
+server:
+  port: ${port:9002}
+
+security:
+  jwt:
+    public-key: classpath:jwt-signing-public-key.txt
+
+spring:
+  application:
+    name: order-service
+
+  flyway:
+    table: order_service_flyway_history
+    baseline-on-migrate: true
+    baseline-version: 1.0
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+  hateoas:
+    use-hal-as-default-json-media-type: false
+  #  kafka:
+  #    properties:
+  #      sasl:
+  #        jaas:
+  #          config: org.apache.kafka.common.security.scram.ScramLoginModule required
+  #            username="USERNAME" password="PASSWORD";
+  #        mechanism: SCRAM-SHA-256
+  #      security:
+  #        protocol: SASL_SSL
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: mysql
+    open-in-view: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        show_sql: false
+        use_sql_comments: true
+        format_sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bookstoreorderservice?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password:
+  #  cache:
+  #    type: redis
+  #  redis:
+  #    host: localhost
+  #    port: 6379
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 100MB
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
+axon:
+  axonserver:
+    servers: localhost:8124
+    command-flow-control:
+      initial-nr-of-permits: 500
+  eventhandling:
+    processors:
+      NAME_OF_THE_PROCESSOR:
+        mode: subscribing
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost

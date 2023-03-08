@@ -7,7 +7,7 @@ Phần backend của hệ thống được xây dựng để hỗ trợ các ứ
 - `Event driven architecture`
 - `Event sourcing`
 - `CQRS`
-- `Saga pattern (Orchestration)`
+- `Saga pattern (Choreography)`
 
 ### **Prerequisites**
 
